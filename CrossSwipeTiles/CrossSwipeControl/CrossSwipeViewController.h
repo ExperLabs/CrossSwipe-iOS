@@ -13,9 +13,9 @@
 
 @interface CrossSwipeViewController : UIViewController
 {
-	SphereDataStructure *appSphere;
-	NSInteger            appSphereX;
-	NSInteger            appSphereY;
+    SphereDataStructure *appSphere;
+    NSInteger            appSphereX;
+    NSInteger            appSphereY;
     NSInteger            tileWidth;
     NSInteger            tileHeight;
     TileContainerView   *tileContainer;
