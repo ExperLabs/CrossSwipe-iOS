@@ -14,6 +14,11 @@
 		2FDACFFD1AF971AB0051A5D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDACFFC1AF971AB0051A5D8 /* Images.xcassets */; };
 		2FDAD0001AF971AB0051A5D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FDACFFE1AF971AB0051A5D8 /* LaunchScreen.xib */; };
 		2FDAD00C1AF971AB0051A5D8 /* CrossSwipeTilesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDAD00B1AF971AB0051A5D8 /* CrossSwipeTilesTests.m */; };
+		2FDAD0211AF98CEC0051A5D8 /* CrossSwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDAD0191AF98CEC0051A5D8 /* CrossSwipeViewController.m */; };
+		2FDAD0221AF98CEC0051A5D8 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDAD01A1AF98CEC0051A5D8 /* Data.m */; };
+		2FDAD0251AF98CEC0051A5D8 /* SphereDataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDAD01D1AF98CEC0051A5D8 /* SphereDataStructure.m */; };
+		2FDAD0261AF98CEC0051A5D8 /* TileContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDAD01E1AF98CEC0051A5D8 /* TileContainerView.m */; };
+		2FDAD0271AF98CEC0051A5D8 /* TileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDAD01F1AF98CEC0051A5D8 /* TileView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		2FDAD0051AF971AB0051A5D8 /* CrossSwipeTilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossSwipeTilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDAD00A1AF971AB0051A5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FDAD00B1AF971AB0051A5D8 /* CrossSwipeTilesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossSwipeTilesTests.m; sourceTree = "<group>"; };
+		2FDAD0191AF98CEC0051A5D8 /* CrossSwipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CrossSwipeViewController.m; path = CrossSwipeControl/CrossSwipeViewController.m; sourceTree = "<group>"; };
+		2FDAD01A1AF98CEC0051A5D8 /* Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = CrossSwipeControl/Data.m; sourceTree = "<group>"; };
+		2FDAD01D1AF98CEC0051A5D8 /* SphereDataStructure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SphereDataStructure.m; path = CrossSwipeControl/SphereDataStructure.m; sourceTree = "<group>"; };
+		2FDAD01E1AF98CEC0051A5D8 /* TileContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TileContainerView.m; path = CrossSwipeControl/TileContainerView.m; sourceTree = "<group>"; };
+		2FDAD01F1AF98CEC0051A5D8 /* TileView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TileView.m; path = CrossSwipeControl/TileView.m; sourceTree = "<group>"; };
+		2FDAD02A1AF98D800051A5D8 /* CrossSwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrossSwipeViewController.h; path = CrossSwipeControl/CrossSwipeViewController.h; sourceTree = "<group>"; };
+		2FDAD02B1AF98D800051A5D8 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = CrossSwipeControl/Data.h; sourceTree = "<group>"; };
+		2FDAD02E1AF98D800051A5D8 /* SphereDataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SphereDataStructure.h; path = CrossSwipeControl/SphereDataStructure.h; sourceTree = "<group>"; };
+		2FDAD02F1AF98D800051A5D8 /* TileContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileContainerView.h; path = CrossSwipeControl/TileContainerView.h; sourceTree = "<group>"; };
+		2FDAD0301AF98D800051A5D8 /* TileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileView.h; path = CrossSwipeControl/TileView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,7 @@
 		2FDACFEE1AF971AB0051A5D8 /* CrossSwipeTiles */ = {
 			isa = PBXGroup;
 			children = (
+				2FDAD0281AF98D440051A5D8 /* CrossSwipeControl */,
 				2FDACFF31AF971AB0051A5D8 /* AppDelegate.h */,
 				2FDACFF41AF971AB0051A5D8 /* AppDelegate.m */,
 				2FDACFF61AF971AB0051A5D8 /* ViewController.h */,
@@ -117,6 +133,23 @@
 				2FDAD00A1AF971AB0051A5D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FDAD0281AF98D440051A5D8 /* CrossSwipeControl */ = {
+			isa = PBXGroup;
+			children = (
+				2FDAD02A1AF98D800051A5D8 /* CrossSwipeViewController.h */,
+				2FDAD0191AF98CEC0051A5D8 /* CrossSwipeViewController.m */,
+				2FDAD02B1AF98D800051A5D8 /* Data.h */,
+				2FDAD01A1AF98CEC0051A5D8 /* Data.m */,
+				2FDAD02E1AF98D800051A5D8 /* SphereDataStructure.h */,
+				2FDAD01D1AF98CEC0051A5D8 /* SphereDataStructure.m */,
+				2FDAD02F1AF98D800051A5D8 /* TileContainerView.h */,
+				2FDAD01E1AF98CEC0051A5D8 /* TileContainerView.m */,
+				2FDAD0301AF98D800051A5D8 /* TileView.h */,
+				2FDAD01F1AF98CEC0051A5D8 /* TileView.m */,
+			);
+			name = CrossSwipeControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FDAD0211AF98CEC0051A5D8 /* CrossSwipeViewController.m in Sources */,
+				2FDAD0221AF98CEC0051A5D8 /* Data.m in Sources */,
+				2FDAD0251AF98CEC0051A5D8 /* SphereDataStructure.m in Sources */,
+				2FDAD0261AF98CEC0051A5D8 /* TileContainerView.m in Sources */,
+				2FDAD0271AF98CEC0051A5D8 /* TileView.m in Sources */,
 				2FDACFF81AF971AB0051A5D8 /* ViewController.m in Sources */,
 				2FDACFF51AF971AB0051A5D8 /* AppDelegate.m in Sources */,
 				2FDACFF21AF971AB0051A5D8 /* main.m in Sources */,
@@ -418,6 +456,7 @@
 				2FDAD0111AF971AB0051A5D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FDAD0121AF971AB0051A5D8 /* Build configuration list for PBXNativeTarget "CrossSwipeTilesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +465,7 @@
 				2FDAD0141AF971AB0051A5D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CrossSwipeControl/CrossSwipeViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : CrossSwipeViewController
 
 @end
 

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CrossSwipeControl/CrossSwipeViewController.h"
+#import "CrossSwipeControl/Data.h"
 
 @interface ViewController ()
 
@@ -14,14 +16,26 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
+    NSMutableArray * allData = [[NSMutableArray alloc] init];
+    
+    for (int i = 1; i <= 256; ++i)
+    {
+        Data* data = [[Data alloc] initWithId:[NSString stringWithFormat:@"%d", i]];
+        [data setStrTitle:[NSString stringWithFormat:@"Title %d", i]];
+        [data setStrDescription:[NSString stringWithFormat:@"Description %d", i]];
+        
+        [allData addObject:data];
+    }
+    [self setTileData:allData];
+
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
